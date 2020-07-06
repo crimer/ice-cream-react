@@ -1,0 +1,23 @@
+.category {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	&:not(:last-child) {
+		margin-right: 10px;
+	}
+	&-image {
+		background-color: #fcd561;
+		width: 70px;
+		height: 70px;
+		border-radius: 15px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&-title {
+	}
+}
+.category-list {
+	display: flex;
+	flex-flow: row nowrap;
+}
