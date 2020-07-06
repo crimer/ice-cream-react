@@ -1,9 +1,9 @@
 import React from 'react'
-import arrow from '../../assets/arrow.svg'
-import basket from '../../assets/basket.svg'
-import logo from '../../assets/logo.svg'
-import telephone from '../../assets/telephone.svg'
-import user from '../../assets/user.svg'
+import arrow from '../../assets/svg/arrow.svg'
+import basket from '../../assets/svg/basket.svg'
+import logo from '../../assets/svg/logo.svg'
+import telephone from '../../assets/svg/telephone.svg'
+import user from '../../assets/svg/user.svg'
 import './Header.scss'
 
 export const Header = () => {
