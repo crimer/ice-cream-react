@@ -1,5 +1,100 @@
-.header{
-  display: flex;
-  flex-flow: row nowrap;
+.header {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #eee;
+	height: 90px;
+	padding: 0 40px;
+	&-logo {
+		height: 70px;
+		&__icon {
+			height: 100%;
+		}
+	}
+	&-fillials {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		margin-right: 70px;
+		&__icon {
+			margin-right: 15px;
+		}
+		&__city {
+			font-size: 16px;
+			font-weight: bold;
+		}
+		&__count {
+			font-size: 14px;
+			color: #a7a7a7;
+		}
+	}
+	&-nav {
+		height: 100%;
+		&__list {
+			display: flex;
+			height: 100%;
+			flex-flow: row nowrap;
+			align-items: center;
+		}
+		&__item {
+      cursor: pointer;
+			height: 100%;
+			display: flex;
+      align-items: center;
+      transition: all .5s ease;
+			&:not(:last-child) {
+				margin-right: 15px;
+      }
+      :hover{
+        border-bottom: 2px solid #44c373;
+      }
+		}
+		&__link {
+      line-height: 90px;
+			height: 100%;
+		}
+	}
+	&-contacts {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
 
+		&__icon {
+			margin-right: 15px;
+		}
+		&__tel {
+			font-size: 16px;
+			font-weight: bold;
+		}
+		&__time {
+			font-size: 14px;
+			color: #a7a7a7;
+		}
+	}
+	&-profile {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		&__icon {
+			margin-right: 15px;
+		}
+	}
+	&-basket {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		&__icon {
+			margin-right: 15px;
+		}
+		&__count {
+			background-color: #fcd561;
+			width: 40px;
+			height: 40px;
+			border-radius: 15px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
 }

@@ -3,8 +3,11 @@ import { Header } from '../Header/Header.jsx'
 
 export const App = () => {
 	return (
-		<div className="App">
+		<main className="app">
 			<Header/>
-		</div>
+      <div className="main container">
+        asa
+      </div>
+		</main>
 	)
 }
