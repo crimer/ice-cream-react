@@ -1,0 +1,12 @@
+import React from 'react'
+import './Filter.scss'
+
+export const Filter = ({ children }) => {
+	return (
+		<div className="filter filter--active">
+			<span className="filter-append"></span>
+			<span className="filter-text">{children}</span>
+			<span className="filter-prepend">&times;</span>
+		</div>
+	)
+}

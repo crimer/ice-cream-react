@@ -1,0 +1,32 @@
+.filter {
+	display: flex;
+	align-items: center;
+	width: auto;
+	padding: 10px 20px;
+	border: 1px solid #44c373;
+	border-radius: 20px;
+  margin: 5px 0;
+  &--active{
+    color: #fff;
+    background-color: #44c373;
+    .filter-prepend{
+      display: block;
+    }
+  }
+	&:not(:last-child) {
+		margin-right: 5px;
+	}
+	&-list {
+		display: flex;
+		flex-flow: row wrap;
+	}
+	&-container {
+		width: 80%;
+		margin: 0 auto;
+	}
+	&-prepend {
+    display: none;
+		cursor: pointer;
+		margin-left: 10px;
+	}
+}
