@@ -5,7 +5,11 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-color: #fff;
+  background-color: #fff;
+  height: 100vh;
+}
+#root{
+  height: 100%;
 }
 * {
 	margin: 0;
@@ -28,3 +32,15 @@ a {
 	color: #000;
 }
 
+.container-1200 {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.container-1450 {
+	max-width: 1450px;
+	margin: 0 auto;
+}
+.text-grey {
+  font-size: 14px;
+  color: #a7a7a7;
+}

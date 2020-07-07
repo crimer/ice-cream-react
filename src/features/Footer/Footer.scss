@@ -1,0 +1,56 @@
+.footer {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 0;
+	border-top: 1px solid #eee;
+	&-nav {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		&__list {
+			display: flex;
+		}
+		&__item {
+			&:not(:last-child) {
+				margin-right: 20px;
+      }
+      &:hover{
+        .footer-nav__link{
+          color: #44c373;
+        }
+      }
+		}
+	}
+	&-cards {
+		margin-top: 25px;
+		&__list {
+			display: flex;
+			align-items: center;
+		}
+	}
+	&-card {
+		&--mastercard {
+			height: 40px;
+		}
+		&--visa {
+			height: 22px;
+		}
+		&--mir {
+			height: 22px;
+		}
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+	&-social {
+		&__github {
+			text-align: end;
+		}
+		&__link {
+			color: #44c373;
+			font-size: 23px;
+		}
+	}
+}

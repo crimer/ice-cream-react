@@ -1,0 +1,61 @@
+{
+	"caruosel": {
+		"slides": [
+			{
+				"image": "https://images.unsplash.com/photo-1505616485412-adfcd5561e31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+				"title": "Твоя маргарита"
+			},
+			{
+				"image": "https://images.unsplash.com/photo-1505616485412-adfcd5561e31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+				"title": "Сырный завтрак"
+			}
+		]
+	},
+	"categories": [
+		{
+			"id": 1,
+      "name": "Рекомендуем!",
+      "image": ""
+		},
+		{
+			"id": 2,
+      "name": "Шоколад",
+      "image": ""
+		},
+		{
+			"id": 3,
+      "name": "Фрукты и ягоды",
+      "image": ""
+		},
+		{
+			"id": 4,
+      "name": "Орехи",
+      "image": ""
+		},
+		{
+			"id": 5,
+      "name": "Пламбир",
+      "image": ""
+		}
+	],
+	"products": [
+		{
+			"id": 1,
+			"name": "Ведро Черника-Ежевика",
+			"image": "https://www.inmarko.ru/files/product/88/medium-262.png?t=1594050787",
+			"categoryId": 2
+		},
+		{
+			"id": 2,
+			"name": "Эскимо в фруктовой глазури Манго-Мвлина",
+			"image": "https://www.inmarko.ru/files/product/90/medium-222.png?t=1594046700",
+			"categoryId": 2
+		},
+		{
+			"id": 3,
+			"name": "Пломбир в вафельном стаканчике с таёжной черникой",
+			"image": "https://www.inmarko.ru/files/product/36/medium-64.png?t=1559291466",
+			"categoryId": 2
+		}
+	]
+}
