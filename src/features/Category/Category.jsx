@@ -2,13 +2,13 @@ import React from 'react'
 import heart from '../../assets/svg/heart.svg'
 import './Category.scss'
 
-export const Category = ({children}) => {
-  return(
-    <div className="category">
-      <div className="category-image">
-        <img className="category-icon icon" src={heart} alt="heart"/>
-      </div>
-      <p className="category-title">{children}</p>
-    </div>
-  )
+export const Category = ({ children }) => {
+	return (
+		<div className="category">
+			<div className="category__image">
+				<img className="category__icon icon" src={heart} alt="heart" />
+			</div>
+			<p className="category__title">{children}</p>
+		</div>
+	)
 }

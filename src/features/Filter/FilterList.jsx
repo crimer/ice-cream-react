@@ -7,7 +7,7 @@ export const FilterList = () => {
 	return (
 		<div className="filter-list">
 			{numb.map((item, index) => (
-				<Filter>Рекомендуем!</Filter>
+				<Filter key={index}>Рекомендуем!</Filter>
 			))}
 		</div>
 	)

@@ -1,3 +1,9 @@
-import {sliderReducer} from './Slider/index'
-
-export {sliderReducer};
+export { Category } from './Category/Category.jsx'
+export { CategoryList } from './Category/CategoryList.jsx'
+export { FilterList } from './Filter/FilterList.jsx'
+export { Filter } from './Filter/Filter.jsx'
+export { Footer } from './Footer/Footer.jsx'
+export { Header } from './Header/Header.jsx'
+export { CardList } from './ProductCard/CardList.jsx'
+export { ProductCard } from './ProductCard/ProductCard.jsx'
+export { Slider } from './Slider/Slider.jsx'

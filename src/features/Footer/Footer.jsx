@@ -3,6 +3,7 @@ import './Footer.scss'
 import mastercard from '../../assets/img/creditCards/mastercard.png'
 import mir from '../../assets/img/creditCards/mir.png'
 import visa from '../../assets/img/creditCards/visa.png'
+import { NavLink } from 'react-router-dom'
 
 export const Footer = () => {
 	return (
@@ -16,19 +17,19 @@ export const Footer = () => {
 					<nav className="footer-nav">
 						<ul className="footer-nav__list">
 							<li className="footer-nav__item">
-								<a className="footer-nav__link">Меню</a>
+								<NavLink to='/' activeClassName="link--active" className="footer-nav__link">Меню</NavLink>
 							</li>
 							<li className="footer-nav__item">
-								<a className="footer-nav__link">Акции</a>
+								<NavLink to='/' activeClassName="link--active" className="footer-nav__link">Акции</NavLink>
 							</li>
 							<li className="footer-nav__item">
-								<a className="footer-nav__link">Доставка</a>
+								<NavLink to='/' activeClassName="link--active" className="footer-nav__link">Доставка</NavLink>
 							</li>
 							<li className="footer-nav__item">
-								<a className="footer-nav__link">О нас</a>
+								<NavLink to='/' activeClassName="link--active" className="footer-nav__link">О нас</NavLink>
 							</li>
 							<li className="footer-nav__item">
-								<a className="footer-nav__link">Контакты</a>
+								<NavLink to='/' activeClassName="link--active" className="footer-nav__link">Контакты</NavLink>
 							</li>
 						</ul>
 						<div className="footer-cards">
@@ -55,7 +56,8 @@ export const Footer = () => {
 						<p className="footer-social__github text-grey">Автор в GitHub</p>
 						<a
 							href="https://github.com/crimer/ice-cream-react"
-							target="_blank"
+              target="_blank"
+              rel="noopener noreferrer"
 							className="footer-social__link">
 							@react-ice-cream
 						</a>

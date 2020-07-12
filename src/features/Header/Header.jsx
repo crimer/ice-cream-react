@@ -5,6 +5,7 @@ import logo from '../../assets/svg/logo.svg'
 import telephone from '../../assets/svg/telephone.svg'
 import user from '../../assets/svg/user.svg'
 import './Header.scss'
+import { NavLink } from 'react-router-dom'
 
 export const Header = () => {
 	return (
@@ -26,19 +27,19 @@ export const Header = () => {
 					<nav className="header-nav">
 						<ul className="header-nav__list">
 							<li className="header-nav__item">
-								<a className="header-nav__link">Меню</a>
+								<NavLink to="/" className="header-nav__link">Меню</NavLink>
 							</li>
 							<li className="header-nav__item">
-								<a className="header-nav__link">Акции</a>
+								<NavLink to="/" className="header-nav__link">Акции</NavLink>
 							</li>
 							<li className="header-nav__item">
-								<a className="header-nav__link">Доставка</a>
+								<NavLink to="/" className="header-nav__link">Доставка</NavLink>
 							</li>
 							<li className="header-nav__item">
-								<a className="header-nav__link">О нас</a>
+								<NavLink to="/" className="header-nav__link">О нас</NavLink>
 							</li>
 							<li className="header-nav__item">
-								<a className="header-nav__link">Контакты</a>
+								<NavLink to="/" className="header-nav__link">Контакты</NavLink>
 							</li>
 						</ul>
 					</nav>

@@ -5,7 +5,7 @@
 	&:not(:last-child) {
 		margin-right: 10px;
 	}
-	&-image {
+	&__image {
 		background-color: #fcd561;
 		width: 70px;
 		height: 70px;
@@ -14,10 +14,9 @@
 		align-items: center;
 		justify-content: center;
 	}
-	&-title {
-	}
-}
-.category-list {
-	display: flex;
-	flex-flow: row nowrap;
+
+  &__list {
+    display: flex;
+    flex-flow: row nowrap;
+  }
 }

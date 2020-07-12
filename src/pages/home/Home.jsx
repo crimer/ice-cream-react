@@ -1,15 +1,15 @@
 import React from 'react'
-import './App.scss'
-import { Header } from '../Header/Header.jsx'
-import { Slider } from '../Slider/Slider.jsx'
-import { CategoryList } from '../Category/CategoryList'
-import { Footer } from '../Footer/Footer'
-import { FilterList } from '../Filter/FilterList'
+import './Home.scss'
+import {
+	Slider,
+	CategoryList,
+	FilterList,
+} from '../../features'
 
-export const App = () => {
+export const Home = () => {
 	return (
-		<div className="app">
-			<Header />
+		<>
+
 			<main className="main">
 				<div className="container-1200">
 					<div className="carousel section">
@@ -24,7 +24,7 @@ export const App = () => {
 					<div className="cards section">Карточки</div>
 				</div>
 			</main>
-			<Footer />
-		</div>
+
+		</>
 	)
 }
