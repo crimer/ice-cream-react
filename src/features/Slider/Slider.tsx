@@ -1,10 +1,10 @@
 import React from 'react'
 import './Slider.scss'
-import { Slide } from './Slide.jsx'
+import { Slide } from './Slide.js'
 import Flicking from '@egjs/react-flicking'
 import { AutoPlay } from '@egjs/flicking-plugins'
 
-export const Slider = () => {
+export const Slider: React.FC = () => {
 	const numb = Array.from(new Array(7).fill().keys()).map(i => (i += 1))
   const plugins = [new AutoPlay(2000, "NEXT")];
 	return (

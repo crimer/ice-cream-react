@@ -5,7 +5,7 @@ import mir from '../../assets/img/creditCards/mir.png'
 import visa from '../../assets/img/creditCards/visa.png'
 import { NavLink } from 'react-router-dom'
 
-export const Footer = () => {
+export const Footer: React.FC = () => {
 	return (
 		<footer className="footer-outer">
 			<div className="container-1450">
@@ -17,19 +17,19 @@ export const Footer = () => {
 					<nav className="footer-nav">
 						<ul className="footer-nav__list">
 							<li className="footer-nav__item">
-								<NavLink to='/' activeClassName="link--active" className="footer-nav__link">Меню</NavLink>
+								<NavLink to='/' exact className="footer-nav__link">Меню</NavLink>
 							</li>
 							<li className="footer-nav__item">
-								<NavLink to='/' activeClassName="link--active" className="footer-nav__link">Акции</NavLink>
+								<NavLink to='/events' className="footer-nav__link">Акции</NavLink>
 							</li>
 							<li className="footer-nav__item">
-								<NavLink to='/' activeClassName="link--active" className="footer-nav__link">Доставка</NavLink>
+								<NavLink to='/delivery' className="footer-nav__link">Доставка</NavLink>
 							</li>
 							<li className="footer-nav__item">
-								<NavLink to='/' activeClassName="link--active" className="footer-nav__link">О нас</NavLink>
+								<NavLink to='/about' className="footer-nav__link">О нас</NavLink>
 							</li>
 							<li className="footer-nav__item">
-								<NavLink to='/' activeClassName="link--active" className="footer-nav__link">Контакты</NavLink>
+								<NavLink to='/contacts' className="footer-nav__link">Контакты</NavLink>
 							</li>
 						</ul>
 						<div className="footer-cards">

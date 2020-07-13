@@ -1,7 +1,7 @@
 import React from 'react'
 import './Filter.scss'
 
-export const Filter = ({ children }) => {
+export const Filter: React.FC = ({ children }) => {
 	return (
 		<div className="filter">
 			<span className="filter-append"></span>

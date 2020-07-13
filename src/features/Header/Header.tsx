@@ -7,7 +7,7 @@ import user from '../../assets/svg/user.svg'
 import './Header.scss'
 import { NavLink } from 'react-router-dom'
 
-export const Header = () => {
+export const Header: React.FC = () => {
 	return (
 		<header className="header-outer">
 			<div className="container-1450">
@@ -27,19 +27,19 @@ export const Header = () => {
 					<nav className="header-nav">
 						<ul className="header-nav__list">
 							<li className="header-nav__item">
-								<NavLink to="/" className="header-nav__link">Меню</NavLink>
+								<NavLink to="/" exact activeClassName="item--active" className="header-nav__link">Меню</NavLink>
 							</li>
 							<li className="header-nav__item">
-								<NavLink to="/" className="header-nav__link">Акции</NavLink>
+								<NavLink to="/events" activeClassName="item--active" className="header-nav__link">Акции</NavLink>
 							</li>
 							<li className="header-nav__item">
-								<NavLink to="/" className="header-nav__link">Доставка</NavLink>
+								<NavLink to="/delivery" activeClassName="item--active" className="header-nav__link">Доставка</NavLink>
 							</li>
 							<li className="header-nav__item">
-								<NavLink to="/" className="header-nav__link">О нас</NavLink>
+								<NavLink to="/about" activeClassName="item--active" className="header-nav__link">О нас</NavLink>
 							</li>
 							<li className="header-nav__item">
-								<NavLink to="/" className="header-nav__link">Контакты</NavLink>
+								<NavLink to="/contacts" activeClassName="item--active" className="header-nav__link">Контакты</NavLink>
 							</li>
 						</ul>
 					</nav>

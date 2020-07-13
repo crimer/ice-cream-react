@@ -1,8 +1,8 @@
 import React from 'react'
-export const About = () => {
+export const Events: React.FC = () => {
   return(
     <div>
-      <h1>About page</h1>
+      <h1>Events</h1>
     </div>
   )
 }

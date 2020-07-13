@@ -1,7 +1,6 @@
 .header {
 	display: flex;
 	flex-flow: row nowrap;
-	// justify-content: space-between;
 	align-items: center;
 	border-bottom: 1px solid #eee;
 	height: 90px;
@@ -46,12 +45,18 @@
 				margin-right: 15px;
 			}
 			:hover {
-				border-bottom: 2px solid #44c373;
-			}
+        &.header-nav__link{
+          border-bottom: 2px solid #44c373;
+
+        }
+      }
 		}
 		&__link {
-			line-height: 90px;
+      line-height: 90px;
 			height: 100%;
+      &.item--active{
+        border-bottom: 2px solid #44c373;
+      }
 		}
 	}
 	&-contacts {

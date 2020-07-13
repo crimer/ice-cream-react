@@ -2,21 +2,21 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './app/index.css'
 import * as serviceWorker from './app/serviceWorker'
-import { App } from './App.jsx'
+import { App } from './App.js'
 import { Provider } from 'react-redux'
 import { store } from './app/store'
 import { BrowserRouter } from 'react-router-dom'
 
-let app = (
+let Root = () => (
 	<React.StrictMode>
-		{/* <Provider store={store}> */}
+		<Provider store={store}>
 			<BrowserRouter>
 				<App />
 			</BrowserRouter>
-		{/* </Provider> */}
+		</Provider>
 	</React.StrictMode>
 )
 
-ReactDOM.render(app, document.getElementById('root'))
+ReactDOM.render(<Root/>, document.getElementById('root'))
 
 serviceWorker.unregister()
