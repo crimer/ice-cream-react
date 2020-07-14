@@ -10,8 +10,27 @@
 	}
 }
 .card {
+  position: relative;
 	display: flex;
-	flex-direction: column;
+  flex-direction: column;
+  &__mark{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 50%;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    &.card--new{
+      background-color: #fcd561;
+      color: #000;
+    }
+  }
+  &__header{
+    margin-top: 20px;
+  }
 	&__figure {
 		width: 80%;
 		margin: 0px auto;

@@ -10,6 +10,9 @@ export const ProductCard: React.FC<IProduct> = product => {
 	return (
 		<div className="card card--white">
 			<div className="card__header">
+        {product.new && (
+          <span className="card__mark card--new">Новинка</span>
+        )}
 				<figure className="card__figure">
 					<img className="card__image" src={product.image} alt="ice cream" />
 				</figure>
