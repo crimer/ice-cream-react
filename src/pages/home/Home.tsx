@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.scss'
-import { Slider, FilterList, CardList } from '../../features'
+import { Slider, CardList, Filter } from '../../features'
 
 export const Home: React.FC = () => {
 	return (
@@ -8,11 +8,8 @@ export const Home: React.FC = () => {
 			<div className="carousel section">
 				<Slider />
 			</div>
-			{/* <div className="categories section">
-				<CategoryList />
-			</div> */}
 			<div className="catalog section">
-				<FilterList />
+				<Filter />
 				<CardList />
 			</div>
 

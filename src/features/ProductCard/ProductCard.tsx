@@ -2,10 +2,13 @@ import React from 'react'
 import './ProductCard.scss'
 import plus from '../../assets/svg/plus.svg'
 import { IProduct } from './types'
+import { toCurrency } from '../../common/utils'
 
 export const ProductCard: React.FC<IProduct> = product => {
+
+
 	return (
-		<div className="card">
+		<div className="card card--white">
 			<div className="card__header">
 				<figure className="card__figure">
 					<img className="card__image" src={product.image} alt="ice cream" />
@@ -16,7 +19,7 @@ export const ProductCard: React.FC<IProduct> = product => {
 			</div>
 			<div className="card__footer">
 				<div className="card__actions">
-					<span className="card__price">{product.price}</span>
+					<span className="card__price">{toCurrency(product.price)}</span>
 					<button className="card__buy">
 						<img className="card__plus" src={plus} alt="plus" />
 					</button>

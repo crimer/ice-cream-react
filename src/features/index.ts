@@ -1,6 +1,5 @@
 export { Category } from './Category/Category'
 export { CategoryList } from './Category/CategoryList'
-export { FilterList } from './Filter/FilterList'
 export { Filter } from './Filter/Filter'
 export { Footer } from './Footer/Footer'
 export { Header } from './Header/Header'

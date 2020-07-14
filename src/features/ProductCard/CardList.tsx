@@ -17,10 +17,13 @@ const CardList: React.FC = () => {
 	}, [])
 
 	return (
-		<div className="card__list">
-			{prods.map((product, index) => (
-				<ProductCard key={index} {...product} />
-			))}
+		<div className="cards">
+			<p className="cards__header">Мороженое</p>
+			<div className="cards__body">
+				{prods.map((product, index) => (
+					<ProductCard key={index} {...product} />
+				))}
+			</div>
 		</div>
 	)
 }
