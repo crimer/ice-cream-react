@@ -1,14 +1,27 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { ProductCard } from './ProductCard'
 import './ProductCard.scss'
+import { useSelector, useDispatch } from 'react-redux'
+import { IAppState } from '../../app/rootRedicer'
+import { IProduct } from './types'
+import { loadProducts } from './operations'
 
-export const CardList: React.FC = () => {
-  const numb = Array.from(new Array(6).fill().keys()).map(i => (i += 1))
-  return(
-    <div className="card__list">
-      {numb.map((p,index) => (
-        <ProductCard key={index}/>
-      ))}
-    </div>
-  )
+const CardList: React.FC = () => {
+	const prods: IProduct[] = useSelector(
+		(state: IAppState) => state.product.products,
+	)
+	const dispatch = useDispatch()
+
+	useEffect(() => {
+		dispatch(loadProducts())
+	}, [])
+
+	return (
+		<div className="card__list">
+			{prods.map((product, index) => (
+				<ProductCard key={index} {...product} />
+			))}
+		</div>
+	)
 }
+export default CardList

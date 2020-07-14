@@ -1,6 +1,10 @@
-const LOAD_CARDS: string = 'cards/LOAD_CARDS'
+export const SET_PRODUCTS: string = 'cards/LOAD_PRODUCTS'
 
-
-export default {
-  LOAD_CARDS,
+export interface IProduct {
+	id: number
+	name: string
+	image: string
+  categoryId: number,
+  description: string,
+  price: number
 }

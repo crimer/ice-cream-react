@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-import productReducer, { ProductState } from '../features/ProductCard'
+import productReducer, { IProductState } from '../features/ProductCard/index'
 
-export interface AppState {
-	product: ProductState
+export interface IAppState {
+	product: IProductState
 }
 
 export const rootReducer = combineReducers({

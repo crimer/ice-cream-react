@@ -9,13 +9,15 @@ export const App: React.FC = () => {
 		<div className="app">
 			<Header />
 			<main className="main">
-				<Switch>
-					<Route path="/" exact component={Home} />
-					<Route path="/about" exact component={About} />
-					<Route path="/events" exact component={Events} />
-					<Route path="/delivery" exact component={Delivery} />
-					<Route path="/contacts" exact component={Contacts} />
-				</Switch>
+        <div className="container-1200">
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/about" exact component={About} />
+            <Route path="/events" exact component={Events} />
+            <Route path="/delivery" exact component={Delivery} />
+            <Route path="/contacts" exact component={Contacts} />
+          </Switch>
+        </div>
 			</main>
 			<Footer />
 		</div>

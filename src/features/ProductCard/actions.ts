@@ -1,13 +1,13 @@
-import types from './types'
+import { SET_PRODUCTS,IProduct } from './types'
 
-interface LoadCards {
-	type: typeof types.LOAD_CARDS
+interface ISetProducts {
+	type: typeof SET_PRODUCTS
+	payload: IProduct[]
 }
 
-const loadCards = (): LoadCards => ({
-	type: types.LOAD_CARDS,
+export const setProducts = (products: IProduct[]): ISetProducts => ({
+	type: SET_PRODUCTS,
+	payload: products,
 })
 
-export default {
-	loadCards,
-}
+export type ProductActions = ISetProducts

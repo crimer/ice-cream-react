@@ -4,3 +4,8 @@
 .section {
 	padding: 10px 0;
 }
+.catalog {
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	grid-gap: 10px;
+}

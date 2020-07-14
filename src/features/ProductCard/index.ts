@@ -1,8 +1,7 @@
-import reducer from './reducers'
+import reducer, * as state from './reducers'
+export type IProductState = state.IProductState
 
-export type { ProductState } from './reducers'
-
-export { default as cardOperations } from './operations'
-export { default as cardTypes } from './types'
+export { loadProducts } from './operations'
+export { SET_PRODUCTS } from './types'
 
 export default reducer

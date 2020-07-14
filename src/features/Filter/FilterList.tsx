@@ -3,7 +3,7 @@ import { Filter } from './Filter'
 import './Filter.scss'
 
 export const FilterList: React.FC = () => {
-	const numb = Array.from(new Array(9).fill().keys()).map(i => (i += 1))
+	const numb = Array.from(new Array(2).fill(1).keys()).map(i => (i += 1))
 	return (
 		<div className="filter-list">
 			{numb.map((item, index) => (

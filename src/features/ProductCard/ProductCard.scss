@@ -1,6 +1,9 @@
 .card {
   display: flex;
   flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 24px rgba(0,0,0,.1);
   &__list{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(270px, 1fr));
@@ -8,7 +11,8 @@
   }
 
 	&__figure {
-    width: 100%;
+    width: 80%;
+    margin: 0px auto;
   }
 	&__image {
     width: 100%;
@@ -18,7 +22,10 @@
     flex-grow: 1;
     padding: 20px 0;
 	}
-
+  &__title{
+    font-weight: bold;
+    text-align: center;
+  }
 	&__actions {
     display: flex;
     flex-direction: row;

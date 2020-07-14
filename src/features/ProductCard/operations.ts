@@ -1,9 +1,7 @@
-import actions from './actions'
+import { setProducts } from './actions'
+import { getProducts } from '../../common/api/api'
 
-const loadProducts = () => dispatch => {
-	// async
-}
-
-export default {
-	loadProducts,
+export const loadProducts = () => async (dispatch: any) => {
+	const res = await getProducts()
+	dispatch(setProducts(res))
 }

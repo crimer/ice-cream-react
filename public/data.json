@@ -42,20 +42,58 @@
 		{
 			"id": 1,
 			"name": "Ведро Черника-Ежевика",
-			"image": "https://www.inmarko.ru/files/product/88/medium-262.png?t=1594050787",
+      "image": "https://www.inmarko.ru/files/product/88/medium-262.png?t=1594050787",
+      "description":"lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+      "price": 2000,
 			"categoryId": 2
 		},
 		{
 			"id": 2,
 			"name": "Эскимо в фруктовой глазури Манго-Мвлина",
-			"image": "https://www.inmarko.ru/files/product/90/medium-222.png?t=1594046700",
+      "image": "https://www.inmarko.ru/files/product/90/medium-222.png?t=1594046700",
+      "description":"lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+      "price": 2000,
 			"categoryId": 2
 		},
 		{
 			"id": 3,
 			"name": "Пломбир в вафельном стаканчике с таёжной черникой",
-			"image": "https://www.inmarko.ru/files/product/36/medium-64.png?t=1559291466",
+      "image": "https://www.inmarko.ru/files/product/36/medium-64.png?t=1559291466",
+      "description":"lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+      "price": 2000,
 			"categoryId": 2
-		}
+    },
+    {
+      "id":4,
+      "name":"Пломбир Классический со вкусом сливок 475 гр",
+      "image":"https://www.inmarko.ru/files/product/27/medium-46.png?t=1559131868",
+      "description":"lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+      "price": 339,
+			"categoryId": 2
+    },
+    {
+      "id":5,
+      "name":"Фермерский пломбир в вафельном стаканчике Черная смородина 90 г",
+      "image":"https://www.inmarko.ru/files/product/119/medium-167.png?t=1589811373",
+      "description":"lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+      "price": 339,
+			"categoryId": 2
+    },
+    {
+      "id":6,
+      "name":"Пломбир эскимо без глазури Сливочное 70 гр",
+      "image":"https://www.inmarko.ru/files/product/42/medium-80.png?t=1559551441",
+      "description":"lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+      "price": 339,
+			"categoryId": 2
+    },
+    {
+      "id":7,
+      "name":"Пломбир в большом вафельном рожке Клубника 100 гр",
+      "image":"https://www.inmarko.ru/files/product/122/medium-170.png?t=1589817948",
+      "description":"lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+      "price": 339,
+			"categoryId": 2
+    }
 	]
 }

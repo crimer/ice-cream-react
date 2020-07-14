@@ -1,22 +1,22 @@
-export interface ProductState {
-	data: []
-	error?: null
+import { SET_PRODUCTS, IProduct } from './types'
+import { ProductActions } from './actions'
+export interface IProductState {
+	products: IProduct[]
+	error: null
 	loading: false
 }
 
-const initState: ProductState = {
-	data: [],
+const initState: IProductState = {
+	products: [],
 	error: null,
 	loading: false,
 }
 
-const reducer = (state = initState, action): ProductState => {
+export default (state = initState, action: ProductActions): IProductState => {
 	switch (action.type) {
-		case value:
-			break
-
+		case SET_PRODUCTS:
+			return { ...state, products: [...action.payload] }
 		default:
 			return state
 	}
 }
-export default reducer

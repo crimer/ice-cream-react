@@ -1,20 +1,21 @@
 import React from 'react'
 import './Slider.scss'
-import { Slide } from './Slide.js'
+import { Slide } from './Slide'
 import Flicking from '@egjs/react-flicking'
 import { AutoPlay } from '@egjs/flicking-plugins'
 
 export const Slider: React.FC = () => {
-	const numb = Array.from(new Array(7).fill().keys()).map(i => (i += 1))
-  const plugins = [new AutoPlay(2000, "NEXT")];
+	const numb = Array.from(new Array(7).fill(1).keys()).map(i => (i += 1))
+
+	const plugins = [new AutoPlay({ duration: 2000 }, 'NEXT')]
 	return (
 		<div className="slider">
 			<Flicking
 				tag="div"
 				viewportTag="div"
-        cameraTag="div"
-        AutoPlay
-        plugins={plugins}
+				cameraTag="div"
+				AutoPlay
+				plugins={plugins}
 				duration={100}
 				classPrefix="eg-flick"
 				deceleration={0.0075}
