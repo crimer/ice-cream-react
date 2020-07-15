@@ -1,0 +1,14 @@
+.contacts {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	&__title {
+		margin-bottom: 20px;
+	}
+	&__info {
+		margin-top: 20px;
+		p {
+			margin-bottom: 10px;
+		}
+	}
+}

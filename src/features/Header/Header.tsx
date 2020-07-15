@@ -1,8 +1,6 @@
 import React from 'react'
-import arrow from '../../assets/svg/arrow.svg'
 import basket from '../../assets/svg/basket.svg'
 import logo from '../../assets/svg/logo.svg'
-import telephone from '../../assets/svg/telephone.svg'
 import user from '../../assets/svg/user.svg'
 import './Header.scss'
 import { NavLink } from 'react-router-dom'
@@ -67,7 +65,6 @@ export const Header: React.FC = () => {
 							<div className="header-profile__icon">
 								<img className="icon" src={user} alt="user" />
 							</div>
-							<p className="header-profile__login">Войти</p>
 						</div>
 						<div className="header-basket">
 							<div className="header-basket__icon">

@@ -6,7 +6,7 @@ import { AutoPlay } from '@egjs/flicking-plugins'
 
 export const Slider: React.FC = () => {
 	const numb = Array.from(new Array(7).fill(1).keys()).map(i => (i += 1))
-
+  // const carousel = useSelector((state:IAppState) => state.)
 	const plugins = [new AutoPlay({ duration: 2000 }, 'NEXT')]
 	return (
 		<div className="slider">

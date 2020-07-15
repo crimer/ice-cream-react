@@ -6,7 +6,6 @@ import { toCurrency } from '../../common/utils'
 
 export const ProductCard: React.FC<IProduct> = product => {
 
-
 	return (
 		<div className="card card--white">
 			<div className="card__header">
