@@ -1,12 +1,14 @@
 import React from 'react'
 import './Slider.scss'
-import { Slide } from './Slide'
+import { Slide, SlideType } from './Slide'
 import Flicking from '@egjs/react-flicking'
 import { AutoPlay } from '@egjs/flicking-plugins'
 
-export const Slider: React.FC = () => {
-	const numb = Array.from(new Array(7).fill(1).keys()).map(i => (i += 1))
-  // const carousel = useSelector((state:IAppState) => state.)
+type SliderTypes = {
+  allSlides: SlideType[]
+}
+
+export const Slider: React.FC<SliderTypes> = ({allSlides}) => {
 	const plugins = [new AutoPlay({ duration: 2000 }, 'NEXT')]
 	return (
 		<div className="slider">
@@ -40,8 +42,8 @@ export const Slider: React.FC = () => {
 				gap={10}
 				moveType={{ type: 'snap', count: 2 }}
 				collectStatistics={true}>
-				{numb.map((item, index) => (
-					<Slide key={index}>Slide: {item}</Slide>
+				{allSlides.map((item:SlideType, index:number) => (
+					<Slide key={index} title={item.title} image={item.image}/>
 				))}
 			</Flicking>
 		</div>

@@ -16,5 +16,5 @@ export const getCategories = async (): Promise<any> => {
 export const getCaruosel = async (): Promise<any> => {
 	const res = await fetch(`${url}data.json`)
 	const { caruosel } = await res.json()
-	return caruosel
+	return caruosel.slides
 }

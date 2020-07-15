@@ -3,13 +3,20 @@
 	flex-flow: row nowrap;
 	align-items: center;
 	justify-content: space-between;
+	width: 100%;
+	background-color: #fff;
 	border-bottom: 1px solid #eee;
 	height: 90px;
+	&-outer {
+		position: fixed;
+		z-index: 10000;
+		width: 100%;
+	}
 	&__left,
 	&__right {
-    display: flex;
-    align-items: center;
-    height: 100%;
+		display: flex;
+		align-items: center;
+		height: inherit;
 	}
 	&-logo {
 		margin-right: 40px;
@@ -39,7 +46,7 @@
 			}
 			:hover {
 				&.header-nav__link {
-					border-bottom: 2px solid var(--main-color);;
+					border-bottom: 2px solid var(--main-color);
 				}
 			}
 		}
@@ -47,7 +54,7 @@
 			line-height: 90px;
 			height: 100%;
 			&.item--active {
-				border-bottom: 2px solid var(--main-color);;
+				border-bottom: 2px solid var(--main-color);
 			}
 		}
 	}
@@ -56,8 +63,7 @@
 		flex-flow: row nowrap;
 		align-items: center;
 		&__icon {
-      margin-right: 15px;
-
+			margin-right: 15px;
 		}
 	}
 	&-basket {
@@ -66,11 +72,11 @@
 		flex-flow: row nowrap;
 		align-items: center;
 		&__icon {
-      margin-right: 20px;
+			margin-right: 20px;
 		}
 		&__count {
-      background-color: var(--main-color);
-      color: white;
+			background-color: var(--main-color);
+			color: white;
 			width: 40px;
 			height: 40px;
 			border-radius: 15px;

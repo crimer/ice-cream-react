@@ -28,9 +28,9 @@ export const Contacts: React.FC = () => {
 						<FormGroup
 							label="Ваше Имя"
 							name="firstName"
-							placeholder="Ваше Имя"
+							placeholder="Имя"
 						/>
-						<FormGroup label="Ваш email" name="email" placeholder="Ваш email" />
+						<FormGroup label="Ваш email" name="email" placeholder="Email" />
 						<FormGroup
 							label="Сообщение"
 							name="message"
