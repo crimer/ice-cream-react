@@ -12,88 +12,79 @@
 			{
 				"image": "https://images.unsplash.com/photo-1561845730-208ad5910553?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
 				"title": "Шоколадный сюрприз"
+			},
+			{
+				"image": "https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80",
+				"title": "Разнообразие вкусов"
 			}
 		]
 	},
-	"categories": [
-		{
-			"id": 1,
-      "name": "Рекомендуем!",
-      "image": ""
-		},
-		{
-			"id": 2,
-      "name": "Шоколад",
-      "image": ""
-		},
-		{
-			"id": 3,
-      "name": "Фрукты и ягоды",
-      "image": ""
-		},
-		{
-			"id": 4,
-      "name": "Орехи",
-      "image": ""
-		},
-		{
-			"id": 5,
-      "name": "Пламбир",
-      "image": ""
-		}
-	],
 	"products": [
 		{
 			"id": 1,
 			"name": "Ведро Черника-Ежевика",
-      "image": "https://www.inmarko.ru/files/product/88/medium-262.png?t=1594050787",
-      "description":"lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
-      "price": 450,
-			"new": true
+			"image": "https://www.inmarko.ru/files/product/88/medium-262.png?t=1594050787",
+			"description": "lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+			"price": 450,
+			"new": "new",
+			"taste": "fruits",
+			"format": "container"
 		},
 		{
 			"id": 2,
 			"name": "Эскимо в фруктовой глазури Манго-Малина",
-      "image": "https://www.inmarko.ru/files/product/90/medium-222.png?t=1594046700",
-      "description":"lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
-      "price": 95
+			"image": "https://www.inmarko.ru/files/product/90/medium-222.png?t=1594046700",
+			"description": "lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+			"price": 95,
+			"taste": "fruits",
+			"format": "eskimo"
 		},
 		{
 			"id": 3,
 			"name": "Пломбир в вафельном стаканчике с таёжной черникой",
-      "image": "https://www.inmarko.ru/files/product/36/medium-64.png?t=1559291466",
-      "description":"lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
-      "price": 35,
-			"new": true
-    },
-    {
-      "id":4,
-      "name":"Пломбир Классический со вкусом сливок 475 гр",
-      "image":"https://www.inmarko.ru/files/product/27/medium-46.png?t=1559131868",
-      "description":"lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
-      "price": 340
-    },
-    {
-      "id":5,
-      "name":"Фермерский пломбир в вафельном стаканчике Черная смородина 90 г",
-      "image":"https://www.inmarko.ru/files/product/119/medium-167.png?t=1589811373",
-      "description":"lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
-      "price": 40,
-			"new": true
-    },
-    {
-      "id":6,
-      "name":"Пломбир эскимо без глазури Сливочное 70 гр",
-      "image":"https://www.inmarko.ru/files/product/42/medium-80.png?t=1559551441",
-      "description":"lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
-      "price": 45
-    },
-    {
-      "id":7,
-      "name":"Пломбир в большом вафельном рожке Клубника 100 гр",
-      "image":"https://www.inmarko.ru/files/product/122/medium-170.png?t=1589817948",
-      "description":"lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
-      "price": 60
-    }
+			"image": "https://www.inmarko.ru/files/product/36/medium-64.png?t=1559291466",
+			"description": "lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+			"price": 35,
+			"new": "new",
+			"taste": "fruits",
+			"format": "cup"
+		},
+		{
+			"id": 4,
+			"name": "Пломбир Классический со вкусом сливок 475 гр",
+			"image": "https://www.inmarko.ru/files/product/27/medium-46.png?t=1559131868",
+			"description": "lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+			"price": 340,
+			"taste": "plombir",
+			"format": "container"
+		},
+		{
+			"id": 5,
+			"name": "Фермерский пломбир в вафельном стаканчике Черная смородина 90 г",
+			"image": "https://www.inmarko.ru/files/product/119/medium-167.png?t=1589811373",
+			"description": "lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+			"price": 40,
+			"new": "new",
+			"taste": "plombir",
+			"format": "cup"
+		},
+		{
+			"id": 6,
+			"name": "Пломбир эскимо без глазури Сливочное 70 гр",
+			"image": "https://www.inmarko.ru/files/product/42/medium-80.png?t=1559551441",
+			"description": "lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+			"price": 45,
+			"taste": "plombir",
+			"format": "eskimo"
+		},
+		{
+			"id": 7,
+			"name": "Пломбир в большом вафельном рожке Клубника 100 гр",
+			"image": "https://www.inmarko.ru/files/product/122/medium-170.png?t=1589817948",
+			"description": "lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+			"price": 60,
+			"taste": "plombir",
+			"format": "horn"
+		}
 	]
 }

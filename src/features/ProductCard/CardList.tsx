@@ -7,10 +7,26 @@ import { IProduct } from './types'
 import { loadProducts } from './operations'
 
 const CardList: React.FC = () => {
-	const prods: IProduct[] = useSelector(
-		(state: IAppState) => state.product.products,
+  const filterExist = (state: IAppState, p: IProduct) => {
+		if (state.filter.filters.length === 0 ) {
+			return state.product.products
+		} else {
+			return (
+				state.filter.filters.includes(p.format) ||
+        state.filter.filters.includes(p.taste) ||
+        state.filter.filters.includes(p.new)
+
+			)
+		}
+  }
+
+  const dispatch = useDispatch()
+	const prods: IProduct[] = useSelector((state: IAppState) =>
+		state.product.products.filter(p => filterExist(state, p)),
 	)
-	const dispatch = useDispatch()
+	const loading: boolean = useSelector(
+		(state: IAppState) => state.product.loading,
+	)
 
 	useEffect(() => {
 		dispatch(loadProducts())
@@ -20,9 +36,15 @@ const CardList: React.FC = () => {
 		<div className="cards">
 			<p className="cards__header">Мороженое</p>
 			<div className="cards__body">
-				{prods.map((product, index) => (
-					<ProductCard key={index} {...product} />
-				))}
+				{loading ? (
+					<p>Загрузка...</p>
+				) : (
+					<>
+						{prods.map((product, index) => (
+							<ProductCard key={index} {...product} />
+						))}
+					</>
+				)}
 			</div>
 		</div>
 	)

@@ -14,8 +14,6 @@ export const Home: React.FC = () => {
 		const fetchCarousel = async () => {
 			const slides: SlideType[] = await getCaruosel()
       setCatousel(slides)
-      console.log(slides);
-
 		}
 		fetchCarousel()
 	}, [])

@@ -21,6 +21,24 @@ const tastes: DropdownItem[] = [
 		selected: false,
 		key: 'nuts',
 	},
+	{
+		id: 4,
+		title: 'Печенье и вафли',
+		selected: false,
+		key: 'cookies',
+	},
+	{
+		id: 5,
+		title: 'Фрукты и ягоды',
+		selected: false,
+		key: 'fruits',
+	},
+	{
+		id: 6,
+		title: 'Карамель',
+		selected: false,
+		key: 'caramel',
+	},
 ]
 const formats: DropdownItem[] = [
 	{
@@ -41,6 +59,27 @@ const formats: DropdownItem[] = [
 		selected: false,
 		key: 'container',
 	},
+	{
+		id: 4,
+		title: 'Стаканчик',
+		selected: false,
+		key: 'cup',
+	},
+	{
+		id: 5,
+		title: 'Весовое',
+		selected: false,
+		key: 'weight',
+	},
+]
+const extras: DropdownItem[] = [
+	{
+		id: 1,
+		title: 'Новинки',
+		selected: false,
+		key: 'new',
+	},
+
 ]
 
 export const Filter: React.FC = () => {
@@ -54,13 +93,10 @@ export const Filter: React.FC = () => {
 				<div className="filter__group filter-dd">
 					<Dropdown title="Вкусы" list={tastes} />
 				</div>
-				<label className="filter__label filter-lable--bold" htmlFor="news">
-					<input className="filter__input" type="checkbox" name="" id="news" />
-					Новинки
-				</label>
-				<button className="filter__btn">
-					Сбросить
-				</button>
+				<div className="filter__group filter-dd">
+					<Dropdown title="Особое" list={extras} />
+				</div>
+				<button className="filter__btn">Сбросить</button>
 			</div>
 		</div>
 	)
